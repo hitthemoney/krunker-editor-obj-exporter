@@ -31,6 +31,6 @@ You will be given download instructions.
 Adding the ability to export as a zip file
 
 ## ASSETS
-* MOD: <http://assets.krunker.io/mod.zip>
+* MOD: <https://assets.krunker.io/mod.zip>
 
 **Remember to check this repo every once in a while for updates!**
