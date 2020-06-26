@@ -32,5 +32,6 @@ Adding the ability to export as a zip file
 
 ## ASSETS
 * MOD: <https://assets.krunker.io/mod.zip>
+* Krunker Editor: <https://kunker.io/editor.html>
 
 **Remember to check this repo every once in a while for updates!**
