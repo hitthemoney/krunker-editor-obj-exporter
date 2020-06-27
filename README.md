@@ -28,7 +28,8 @@ You will be given download instructions.
 * Also an invalid mod path will result in no image textures loading and possibly the obj not loading as a whole.
 
 ## Working on
-Adding the ability to export as a zip file
+* Adding the ability to export as a zip file
+* Emmisive Textures
 
 ## ASSETS
 * MOD: <https://assets.krunker.io/mod.zip>
