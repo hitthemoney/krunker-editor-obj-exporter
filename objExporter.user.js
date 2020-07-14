@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Krunker Map OBJ Exporter
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Krunker Map Downloader. https://hitthemoney.com
 // @author       hitthemoney
 // @match        https://krunker.io/editor.html*
@@ -370,11 +370,11 @@
         downloadNode.remove();
     }
 
-    var btmPanel = document.getElementsByClassName("bottomPanel")[3];
+    var btmPanel = document.getElementsByClassName("toolbarDropDown")[0];
     var exportObjNode = document.createElement("div");
-    exportObjNode.innerHTML = "Export OBJ"
+    exportObjNode.innerHTML = "Export As OBJ"
     exportObjNode.id = "exportObj";
-    exportObjNode.className = "bottomButton"
+    exportObjNode.className = "toolbarDropDownItem"
     exportObjNode.onclick = function () {
         var mtlFileName = prompt("MTL File Name (Pressing cancel or no name will result in blank textures)")
         var objFileName = prompt("OBJ File Name")
@@ -382,5 +382,5 @@
         alert("Changing file names can result in blank textures.")
         window.downloadSceneAsObj(texturesFilePath, mtlFileName, objFileName);
     }
-    btmPanel.appendChild(exportObjNode);
+    btmPanel.insertBefore(exportObjNode, btmPanel.children[2]);
 }();
