@@ -33,6 +33,6 @@ You will be given download instructions.
 
 ## ASSETS
 * MOD: <https://assets.krunker.io/mod.zip>
-* Krunker Editor: <https://kunker.io/editor.html>
+* Krunker Editor: <https://krunker.io/editor.html>
 
 **Remember to check this repo every once in a while for updates!**
