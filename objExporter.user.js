@@ -10,7 +10,7 @@
 
 ! function () {
 
-    window.THREE = T3D.THREE
+    window.THREE = KE.THREE
 
     /**
      * @author mrdoob / http://mrdoob.com/
@@ -338,17 +338,17 @@
             for (i = 0; i < mesh.length; i++) {
                 exscene.add(mesh[i])
             }
-            T3D.importMap(T3D.getMapExport())
+            KE.importMap(KE.getMapExport())
             return exporter.parse(exscene, texturesFilePath, mtlFileName);
         } else {
-            T3D.importMap(T3D.getMapExport())
+            KE.importMap(KE.getMapExport())
             return exporter.parse(mesh, texturesFilePath, mtlFileName);
         }
     }
 
     window.downloadSceneAsObj = (texturesFilePath, mtlFileName = 'objmaterial', objFileName = "obj") => {
 
-        var data = window.objectToObj(T3D.objInsts, texturesFilePath, mtlFileName);
+        var data = window.objectToObj(KE.objInsts, texturesFilePath, mtlFileName);
 
         var objBlob = new Blob([data.obj], {
             type: 'text/plain'
